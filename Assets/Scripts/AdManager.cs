@@ -15,6 +15,17 @@ public class AdManager : MonoBehaviour {
 	}
 
 	public void Init(){
-
+		RequestBanner ();
 	}
+
+	private void RequestBanner()
+	{
+		AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		AndroidJavaObject activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+		AndroidJavaObject hook = new AndroidJavaObject ("com.yash.ads.hook", new object[]{activity});
+//		activity.Call("runOnUiThread",new object[]{initializer});
+
+		hook.CallStatic("LoadBannerAd",new object[]{"ca-app-pub-8802518900917873/1068701346","TOP"});
+	}
+
 }

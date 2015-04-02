@@ -1,8 +1,5 @@
-# AdmobAds
-AdMobWrapper for Unity3D
-
 ### Installing
-Download [UnityPackage](https://github.com/Yash-Kansagara/AdmobUnityPackage) and import the package.
+Download [UnityPackage](https://github.com/Yash-Kansagara/AdmobUnityPackage/archive/master.zip) and import the package.
 
 ### Demo Unity Project
 A demo unity project can be found [HERE](https://github.com/Yash-Kansagara/AdmobAds)
@@ -51,3 +48,5 @@ use `LoadInterstitial ();` to load the ad.
 This delegate is called when interstitial is loaded successfully.  
 `AdManager.instance.onInterstitialLoaded = delegate { Debug.Log("Interstitial Loaded");	};`  
 
+### Eclipse project
+Ecliplse project of this plugin is [here](https://github.com/Yash-Kansagara/AdmobAdsEclipseProject)
